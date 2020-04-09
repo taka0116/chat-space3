@@ -1,0 +1,48 @@
+.chat
+  .header
+    .left-header
+      .left-header__title
+        グループ名
+      %ul.left-header__members
+        Members:
+        %li.member
+          メンバー名
+    .right-header
+      .right-header__button
+        Edit
+  .messages
+    .message
+      .upper-message
+        .upper-message__name
+          ユーザー名   
+        .upper-message__date
+          2020/1/1
+      .lower-message
+        .lower-message__content
+          メッセージ
+    .message
+      .upper-message
+        .upper-message__name
+          ユーザー名   
+        .upper-message__date
+          2020/1/1
+      .lower-message
+        .lower-message__content
+          メッセージ 
+    .message
+      .upper-message
+        .upper-message__name
+          ユーザー名   
+        .upper-message__date
+          2020/1/1
+      .lower-message
+        .lower-message__content
+          メッセージ   
+  .form
+    %form
+      .input-box
+        %input{type: 'text', class: 'input-box__text', placeholder: 'type a message'}
+        %label{class: 'input-box__image'}
+          = fa_icon 'picture-o', class: 'icon'
+          %input{type:'file', class: 'input-box__image__file'}
+      %input{type: 'submit', class: 'submit__btn'}
