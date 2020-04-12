@@ -27,10 +27,10 @@
         .icon {
           color: #fff;
         }
-      }
-      
+      }   
     }
   }
+
   .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
@@ -38,12 +38,18 @@
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
+      a {
+        color:white;
+        text-decoration: none;
+      }
       &__name {
         font-size: 15px;
+        
       }
       &__message {
         font-size: 11px;
-        margin-top: 5px;  
+        margin-top: 5px;
+          
       }
     }
   }
